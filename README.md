@@ -9,8 +9,7 @@ This repository contains the code which implements a library for the MCP23017 IO
 This library requires no additional dependencies outside of the Raspberry Pi RP2040 C SDK. To install this library, download this repository into your project and add the following lines to your project's CMake file:
 
 ```
-set(mcp23017_lib_dir {path_to_mcp23017_lib_folder})
-include({path_to_mcp23017_lib_folder}/src/mcp23017_lib.cmake)
+add_subdirectory({path_to_mcp23017_lib_folder}/src)
 ```
 
 where `{path_to_mcp23017_lib_folder}` is replaced with the path to the library.

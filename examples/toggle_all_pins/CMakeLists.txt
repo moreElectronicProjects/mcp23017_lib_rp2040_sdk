@@ -27,11 +27,8 @@ add_executable(${PROJECT_NAME}
     main.c
 )
 
-# Set the directory to the mcp23017_lib dir
-set(mcp23017_lib_dir ../../../mcp23017_lib)
-
-# Include the mcp23017_lib dir CMake file
-include(../../src/mcp23017_lib.cmake)
+# Include the MCP23017 library
+add_subdirectory(src)
 
 # Link the needed libraries
 target_link_libraries(${PROJECT_NAME}
